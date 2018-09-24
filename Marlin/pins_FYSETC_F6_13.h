@@ -78,7 +78,7 @@
 
 
 /* DIAG
- * DIAG is not directly connected to the MCU. Please close 
+ * DIAG is not directly connected to the MCU. Please close
  * the jumper next to the limit switch socket when using it.
  */
 #define X_CS_PIN        32
@@ -89,16 +89,15 @@
 #define E1_CS_PIN       70
 #define E2_CS_PIN       74
 
-#define X_TMC2130_DIAG     -1 
-#define Y_TMC2130_DIAG     -1 
-#define Z_TMC2130_DIAG     -1 
+#define X_TMC2130_DIAG     -1
+#define Y_TMC2130_DIAG     -1
+#define Z_TMC2130_DIAG     -1
 #define E0_TMC2130_DIAG    -1
-#define E1_TMC2130_DIAG    -1 
+#define E1_TMC2130_DIAG    -1
 #define E2_TMC2130_DIAG    -1
 
 
 #if HAS_DRIVER(TMC2208)
-
 /**
  * Software serial
  */
@@ -120,9 +119,7 @@
 
  #define E2_SERIAL_RX_PIN      22
  #define E2_SERIAL_TX_PIN      83
- 
 #endif
-
 
 //
 // Temperature Sensors
@@ -140,9 +137,9 @@
 #define HEATER_2_PIN       7
 #define HEATER_BED_PIN     8
 
-#define FAN0_PIN           2
-#define FAN1_PIN           3
-#define FAN2_PIN           4
+#define FAN0_PIN           46
+#define FAN1_PIN           45
+#define FAN2_PIN           44
 
 //
 // Misc. Functions
@@ -169,7 +166,6 @@
   #define PS_ON_PIN         11
 #endif
 
-
 //#if ENABLED(CASE_LIGHT_ENABLE) && !PIN_EXISTS(CASE_LIGHT) && !defined(SPINDLE_LASER_ENABLE_PIN)
 //  #if !defined(NUM_SERVOS) || NUM_SERVOS == 0 // try to use servo connector first
 //    #define CASE_LIGHT_PIN   6      // MUST BE HARDWARE PWM
@@ -195,7 +191,6 @@
 //  #endif
 //#endif
 
-
 //////////////////////////
 // LCDs and Controllers //
 //////////////////////////
@@ -211,5 +206,3 @@
 #define BTN_ENC             35
 #define SD_DETECT_PIN       49
 #define KILL_PIN            41
-
-

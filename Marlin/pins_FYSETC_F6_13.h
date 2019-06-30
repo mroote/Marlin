@@ -137,10 +137,18 @@
 #define FAN2_PIN           46
 
 //
+// Servos
+//
+#define SERVO0_PIN         13
+#define SERVO1_PIN         11    // (PS_ON_PIN)
+#define SERVO2_PIN         10    // (FIL_RUNOUT_PIN)
+#define SERVO3_PIN          4    // (RGB_LED_G_PIN)
+
+//
 // Misc. Functions
 //
 #define SDSS               53
-#define LED_PIN            13
+//#define LED_PIN            13
 
 #if ENABLED(RGB_LED) || ENABLED(RGBW_LED)
   #define RGB_LED_R_PIN    3
